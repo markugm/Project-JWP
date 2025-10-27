@@ -11,7 +11,7 @@ if (session_status() === PHP_SESSION_NONE) {
 if (!function_exists('e')) {
     // safe include: require_once __DIR__ . '/functions.php';
     // jika functions.php ada di app/functions.php
-    require_once __DIR__ . '/functions.php';
+    require_once __DIR__ . '/function.php';
 }
 
 function is_logged_in() {

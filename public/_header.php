@@ -13,9 +13,9 @@ $current = basename($_SERVER['PHP_SELF']); // deteksi file aktif
 function dashboard_link_for_role() {
     $role = $_SESSION['user_role'] ?? 'user';
     if ($role === 'admin') {
-        return 'admin/admin_dashboard.php'; // atau 'admin/' kalau index.php di folder admin
+        return 'admin/dashboard.php'; // atau 'admin/' kalau index.php di folder admin
     }
-    return 'users/users_dashboard.php'; // atau 'users/'
+    return 'users/dashboard.php'; // atau 'users/'
 }
 ?>
 
@@ -32,7 +32,7 @@ function dashboard_link_for_role() {
 </head>
 
 <body>
-    <header class="bg-gray-900 fixed top-0 right-0 left-0">
+    <header class="bg-gray-900 sticky top-0 z-50">
         <nav aria-label="Global" class="page-container mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-8">
             <div class="flex lg:flex-1">
                 <a href="#" class="-m-1.5 p-1.5">
@@ -93,7 +93,7 @@ function dashboard_link_for_role() {
 
         </nav>
     </header>
-    <main class="flex-grow page-container px-4 py-20">
+    <main class="flex-grow page-container px-4 py-4">
 </body>
 </html>
 
