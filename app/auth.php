@@ -35,7 +35,7 @@ function current_user_name() {
 // ini syarat login biasa atau user
 function require_login() {
   if (!is_logged_in()) {
-    header('Location: /pert6-web-blog/public/login.php?next=' . urlencode($_SERVER['REQUEST_URI']));
+    header('Location: /Project-JWP/public/login.php?next=' . urlencode($_SERVER['REQUEST_URI']));
     exit;
   }
 }

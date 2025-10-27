@@ -13,7 +13,7 @@ $current = basename($_SERVER['PHP_SELF']); // deteksi file aktif
 function dashboard_link_for_role() {
     $role = $_SESSION['user_role'] ?? 'user';
     if ($role === 'admin') {
-        return 'admin/dashboard.php'; // atau 'admin/' kalau index.php di folder admin
+        return 'admin/articles/index.php'; // atau 'admin/' kalau index.php di folder admin
     }
     return 'users/dashboard.php'; // atau 'users/'
 }

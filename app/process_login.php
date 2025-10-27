@@ -49,9 +49,9 @@ $_SESSION['user_role'] = $role;
 
 // redirect berdasarkan role
 if ($role === 'admin') {
-  header('Location: ../public/admin/admin_dashboard.php');
+  header('Location: ../public/admin/articles/index.php');
   exit;
 } else {
-  header('Location: ../public/users/users_dashboard.php');
+  header('Location: ../public/users/dashboard.php');
   exit;
 }
